@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__container">
+                <!-- <nav>
+                    <div class="header__navbar">
+                        <div class="header__container-nav">
+                            <input class="header__navbar-checkbox" type="checkbox" name="" id="" />
+                            <div class="header__navbar_hamburger-lines">
+                                <span class="line line1"></span>
+                                <span class="line line2"></span>
+                                <span class="line line3"></span>
+                            </div>  
+                            <div class="header__logo">
+                                <h1>
+                                    <a href="" class="header__link-logo">МГ-отдел</a>
+                                </h1>
+                              </div>
+                            <div class="header__navbar_menu-items">
+                                <ul class="navbar__list">
+                                    <li class="navbar__item">
+                                        <button id="first-menu" class="button navbar-link navbar__link-table" onclick="openbox('menu-table'); return false">Сводная таблица</button>
+                                    </li>
+                                    <li class="navbar__item">
+                                        <button id="second-menu" class="button navbar-link navbar__link-base" onclick="openbox('menu-base'); return false">Работа с базой</button>
+                                    </li>
+                                    <li class="navbar__item">
+                                        <button id="third-menu" class="button navbar-link navbar__link-obj" onclick="openbox('menu-obj'); return false">Объекты</button>
+                                    </li>
+                                    <li class="navbar__item">
+                                        <button id="fourth-menu" class="button navbar-link navbar__link-change" onclick="openbox('menu-change'); return false">Изменения</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav> -->
+                <div id="menu">
+                    <button class="c-hamburger c-hamburger-line">
+                        <span class="c-span">Menu</span>
+                    </button>
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <button id="first-menu" class="button navbar-link navbar__link-table" onclick="openbox('menu-table'); return false">Сводная таблица</button>
+                        </li>
+                        <li class="navbar__item">
+                            <button id="second-menu" class="button navbar-link navbar__link-base" onclick="openbox('menu-base'); return false">Работа с базой</button>
+                        </li>
+                        <li class="navbar__item">
+                            <button id="third-menu" class="button navbar-link navbar__link-obj" onclick="openbox('menu-obj'); return false">Объекты</button>
+                        </li>
+                        <li class="navbar__item">
+                            <button id="fourth-menu" class="button navbar-link navbar__link-change" onclick="openbox('menu-change'); return false">Изменения</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div id="menu-table" class="main__menu" style="display:none;">
+                    <h2 class="subtitle">
+                        Сводная таблица Объектов
+                    </h2>
+                    <div class="main__menu__container">
+                        <button id="table-ajax_2016" class="main__btn button">2016</button>
+                        <button id="table-ajax_2017" class="main__btn button">2017</button>
+                        <button id="table-ajax_2018" class="main__btn button">2018</button>
+                        <button id="table-ajax_2019" class="main__btn button">2019</button>
+                        <button id="table-ajax_2020" class="main__btn button">2020</button>
+                        <button id="table-ajax_2021" class="main__btn button">2021</button>
+                        <button id="table-ajax_2022" class="main__btn button">2022</button>
+                        <div id="menu-table-ajax_2016" class="main__menu__table-hidden">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum, eveniet ipsum distinctio et debitis, itaque hic enim qui soluta praesentium saepe dolor a sit, illum ad officia explicabo ipsam?
+                        </div>
+                        <div id="menu-table-ajax_2017" class="main__menu__table-hidden">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum, eveniet ipsum distinctio et debitis, itaque hic enim qui soluta praesentium saepe dolor a sit, illum ad officia explicabo ipsam?
+                        </div>
+                        <div id="menu-table-ajax_2018" class="main__menu__table-hidden">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum, eveniet ipsum distinctio et debitis, itaque hic enim qui soluta praesentium saepe dolor a sit, illum ad officia explicabo ipsam?
+                        </div>
+                        <div id="menu-table-ajax_2019" class="main__menu__table-hidden">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum, eveniet ipsum distinctio et debitis, itaque hic enim qui soluta praesentium saepe dolor a sit, illum ad officia explicabo ipsam?
+                        </div>
+                        <div id="menu-table-ajax_2020" class="main__menu__table-hidden">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum, eveniet ipsum distinctio et debitis, itaque hic enim qui soluta praesentium saepe dolor a sit, illum ad officia explicabo ipsam?
+                        </div>
+                        <div id="menu-table-ajax_2021" class="main__menu__table-hidden">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum, eveniet ipsum distinctio et debitis, itaque hic enim qui soluta praesentium saepe dolor a sit, illum ad officia explicabo ipsam?
+                        </div>
+                        <div id="menu-table-ajax_2022" class="main__menu__table-hidden">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum, eveniet ipsum distinctio et debitis, itaque hic enim qui soluta praesentium saepe dolor a sit, illum ad officia explicabo ipsam?
+                        </div>
+                    </div>
+                </div>
+                <div id="menu-base" class="main__menu" style="display:none;">
+                    <h2 class="subtitle main-base__subtitle">
+                        Работа с базой
+                    </h2>
+                    <p class="main__discription">Выберите действие:</p>
+                    <div class="main__base__container">
+                        <button id="base-ajax_add" class="main__btn button">Добавить год в базу</button>
+                        <button id="base-ajax_create" class="main__btn button">Создать объект</button>
+                        <button id="base-ajax_compr" class="main__btn button">Компрессорные</button>
+                        <button id="base-ajax_vac" class="main__btn button">Вакуумные установки</button>
+                        <button id="base-ajax_kgs" class="main__btn button">КГС</button>
+                    </div>
+                    
+                    <div id="menu-base-ajax_add" class="main__menu__base-hidden">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, incidunt, quidem fugit dolorem nesciunt officiis qui totam tenetur impedit praesentium sit quibusdam at sapiente maxime velit voluptate quis odio quae.
+                    </div>
+                    <div id="menu-base-ajax_create" class="main__menu__base-hidden">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, incidunt, quidem fugit dolorem nesciunt officiis qui totam tenetur impedit praesentium sit quibusdam at sapiente maxime velit voluptate quis odio quae.
+                    </div>
+                    <div id="menu-base-ajax_compr" class="main__menu__base-hidden">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, incidunt, quidem fugit dolorem nesciunt officiis qui totam tenetur impedit praesentium sit quibusdam at sapiente maxime velit voluptate quis odio quae.
+                    </div>
+                    <div id="menu-base-ajax_vac" class="main__menu__base-hidden">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, incidunt, quidem fugit dolorem nesciunt officiis qui totam tenetur impedit praesentium sit quibusdam at sapiente maxime velit voluptate quis odio quae.
+                    </div>
+                    <div id="menu-base-ajax_kgs" class="main__menu__base-hidden">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, incidunt, quidem fugit dolorem nesciunt officiis qui totam tenetur impedit praesentium sit quibusdam at sapiente maxime velit voluptate quis odio quae.
+                    </div>
+                </div>
+                <div id="menu-obj" class="main__menu" style="display:none;">
+                    <h2 class="subtitle">
+                        Работа с объектами
+                    </h2>
+                    <div class="main__menu__container">
+                        <button id="obj-ajax_2016" class="main__btn button">2016</button>
+                        <button id="obj-ajax_2017" class="main__btn button">2017</button>
+                        <button id="obj-ajax_2018" class="main__btn button">2018</button>
+                        <button id="obj-ajax_2019" class="main__btn button">2019</button>
+                        <button id="obj-ajax_2020" class="main__btn button">2020</button>
+                        <button id="obj-ajax_2021" class="main__btn button">2021</button>
+                        <button id="obj-ajax_2022" class="main__btn button">2022</button>
+                        <div id="menu-obj-ajax_2016" class="main__menu__obj-hidden">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum, eveniet ipsum distinctio et debitis, itaque hic enim qui soluta praesentium saepe dolor a sit, illum ad officia explicabo ipsam?
+                        </div>
+                        <div id="menu-obj-ajax_2017" class="main__menu__obj-hidden">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum, eveniet ipsum distinctio et debitis, itaque hic enim qui soluta praesentium saepe dolor a sit, illum ad officia explicabo ipsam?
+                        </div>
+                        <div id="menu-obj-ajax_2018" class="main__menu__obj-hidden">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum, eveniet ipsum distinctio et debitis, itaque hic enim qui soluta praesentium saepe dolor a sit, illum ad officia explicabo ipsam?
+                        </div>
+                        <div id="menu-obj-ajax_2019" class="main__menu__obj-hidden">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum, eveniet ipsum distinctio et debitis, itaque hic enim qui soluta praesentium saepe dolor a sit, illum ad officia explicabo ipsam?
+                        </div>
+                        <div id="menu-obj-ajax_2020" class="main__menu__obj-hidden">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum, eveniet ipsum distinctio et debitis, itaque hic enim qui soluta praesentium saepe dolor a sit, illum ad officia explicabo ipsam?
+                        </div>
+                        <div id="menu-obj-ajax_2021" class="main__menu__obj-hidden">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum, eveniet ipsum distinctio et debitis, itaque hic enim qui soluta praesentium saepe dolor a sit, illum ad officia explicabo ipsam?
+                        </div>
+                        <div id="menu-obj-ajax_2022" class="main__menu__obj-hidden">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum, eveniet ipsum distinctio et debitis, itaque hic enim qui soluta praesentium saepe dolor a sit, illum ad officia explicabo ipsam?
+                        </div>
+                    </div>
+                </div>
+                <div id="menu-change" class="main__menu" style="display:none;">
+                    <h2 class="subtitle">
+                        Список изменений
+                    </h2>
+                    <div class="menu__select__container">
+                        <div class="dropdown">
+                          <input class="text-box" type="text" placeholder="Выберите объект" readonly>
+                          <div class="options">
+                            <div onclick="show('Беженарь')">Беженарь</div>
+                            <div onclick="show('Матюкова')">Матюкова</div>
+                          </div>
+                        </div>
+                      </div>
+                      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
