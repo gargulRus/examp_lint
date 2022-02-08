@@ -72,13 +72,21 @@
                         Сводная таблица Объектов
                     </h2>
                     <div class="main__menu__container">
-                        <button id="table-ajax_2016" class="main__btn button">2016</button>
+                        <!-- <button id="table-ajax_2016" class="main__btn button">2016</button>
                         <button id="table-ajax_2017" class="main__btn button">2017</button>
                         <button id="table-ajax_2018" class="main__btn button">2018</button>
                         <button id="table-ajax_2019" class="main__btn button">2019</button>
                         <button id="table-ajax_2020" class="main__btn button">2020</button>
                         <button id="table-ajax_2021" class="main__btn button">2021</button>
-                        <button id="table-ajax_2022" class="main__btn button">2022</button>
+                        <button id="table-ajax_2022" class="main__btn button">2022</button> -->
+                        <button id="year_btn" data-id = "ident_in_base_1" class="main__btn button year_btn">2016</button>
+                        <button id="year_btn" data-id = "ident_in_base_2" class="main__btn button year_btn">2017</button>
+                        <button id="year_btn" data-id = "ident_in_base_3" class="main__btn button year_btn">2018</button>
+                        <button id="year_btn" data-id = "ident_in_base_4" class="main__btn button year_btn">2019</button>
+                        <button id="year_btn" data-id = "ident_in_base_5" class="main__btn button year_btn">2020</button>
+                        <button id="year_btn" data-id = "ident_in_base_6" class="main__btn button year_btn">2021</button>
+                        <button id="year_btn" data-id = "ident_in_base_7" class="main__btn button year_btn">2022</button>
+                        <button id="year_btn" data-id = "ident_in_base_8" class="main__btn button year_btn">2023</button>
                         <div id="menu-table-ajax_2016" class="main__menu__table-hidden">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum, eveniet ipsum distinctio et debitis, itaque hic enim qui soluta praesentium saepe dolor a sit, illum ad officia explicabo ipsam?
                         </div>
@@ -100,6 +108,8 @@
                         <div id="menu-table-ajax_2022" class="main__menu__table-hidden">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum, eveniet ipsum distinctio et debitis, itaque hic enim qui soluta praesentium saepe dolor a sit, illum ad officia explicabo ipsam?
                         </div>
+                        <br>
+                        <div id="ajaxContent" class="main__menu__table">Тут загрузим контент</div>
                     </div>
                 </div>
                 <div id="menu-base" class="main__menu" style="display:none;">
@@ -187,5 +197,49 @@
     </div>
 
     <script src="./js/index.js"></script>
+
+    <script>
+        //Универсальная функция ajax
+        function ajaxSend(param1) {
+            //получили div в который загрузим контент от запроса
+            let ajaxLoad = document.getElementById('ajaxContent');
+            //Создаем объект асинхронного запроса
+            let request = new XMLHttpRequest();
+            //путь до php-скрипта, который нам ответит
+            const url = "./ajax/ajaxresponce.php";
+            // что передадим в запросе
+            // Здесь arguments - массив элементов переданных в функцию
+            // формируем тело POST запроса
+            let params = "baseid=" + arguments[0];
+            //Открыли запрос на сервер - true - асинхронный, false - синхронный
+            request.open("POST", url, true);
+            //Послали заголовки
+            request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            //Отправили POST
+            request.send(params);
+            //Ждем что вернет сервер
+            request.onreadystatechange = function() {
+                //если все хорошо вернется код 4
+                if(request.readyState === 4) {
+                    ajaxLoad.style.border = '1px solid #e8e8e8';
+                    //если ошибок небыло и получен код 200
+                    if(request.status === 200) { 
+                        ajaxLoad.innerHTML = request.responseText;
+                    } else {
+                        //если случилась какая-то беда
+                        ajaxLoad.innerHTML = 'An error occurred during your request: ' +  request.status + ' ' + request.statusText;
+                    } 
+                }
+            }
+        }
+
+
+        //получили массив кнопок
+        let elements = document.getElementsByClassName('year_btn');
+        //На каждую кнопку в массиве вешаем функцию на клик.
+        for (let elem of elements) {
+          elem.onclick = function() {ajaxSend(this.dataset.id)};
+        }
+      </script>
 </body>
 </html>
