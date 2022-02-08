@@ -82,40 +82,40 @@ function addEventListeners() {
     // });
 
     
-    openMenuTableAjax2016.addEventListener('click', function(e) {
-        e.preventDefault();
-        menuAjax2016.classList.toggle("main__menu__table")
-    });
+    // openMenuTableAjax2016.addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     menuAjax2016.classList.toggle("main__menu__table")
+    // });
     
-    openMenuTableAjax2017.addEventListener('click', function(e) {
-        e.preventDefault();
-        menuAjax2017.classList.toggle("main__menu__table")
-    });
+    // openMenuTableAjax2017.addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     menuAjax2017.classList.toggle("main__menu__table")
+    // });
 
-    openMenuTableAjax2018.addEventListener('click', function(e) {
-        e.preventDefault();
-        menuAjax2018.classList.toggle("main__menu__table")
-    });
+    // openMenuTableAjax2018.addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     menuAjax2018.classList.toggle("main__menu__table")
+    // });
 
-    openMenuTableAjax2019.addEventListener('click', function(e) {
-        e.preventDefault();
-        menuAjax2019.classList.toggle("main__menu__table")
-    });
+    // openMenuTableAjax2019.addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     menuAjax2019.classList.toggle("main__menu__table")
+    // });
 
-    openMenuTableAjax2020.addEventListener('click', function(e) {
-        e.preventDefault();
-        menuAjax2020.classList.toggle("main__menu__table")
-    });
+    // openMenuTableAjax2020.addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     menuAjax2020.classList.toggle("main__menu__table")
+    // });
 
-    openMenuTableAjax2021.addEventListener('click', function(e) {
-        e.preventDefault();
-        menuAjax2021.classList.toggle("main__menu__table")
-    });
+    // openMenuTableAjax2021.addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     menuAjax2021.classList.toggle("main__menu__table")
+    // });
 
-    openMenuTableAjax2022.addEventListener('click', function(e) {
-        e.preventDefault();
-        menuAjax2022.classList.toggle("main__menu__table")
-    });
+    // openMenuTableAjax2022.addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     menuAjax2022.classList.toggle("main__menu__table")
+    // });
 
 
     openMenuAddAjax.addEventListener('click', function(e) {
